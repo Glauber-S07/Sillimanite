@@ -20,7 +20,3 @@ Tech Stack
 2. Ensure you have JDK 25 installed.
 3. Run the main class
 
-graph LR
-    A[Ingestion] --> B[Messagery]
-    B --> C[Processing]
-    C --> D[Infra]
