@@ -1,0 +1,36 @@
+# ADR-001: Escolha da arquitetura inicial da ingestão.
+
+  **Data:** 22/06/2026
+
+    ## Contexto
+
+    O projeto precisa lidar com múltiplos tipos dados, de uma maneira flexível e dinâmica, com métodos de ingestão adequados para os tipos de demandas.
+    o primeiro escolhido foi o modelo File-Based Ingestion/Batch File Processing, visando lidar primariamente com dados estruturados.
+
+    ## Argumentação 
+    Essa metodologia foi adotada pelos seguintes motivos:
+    * Simplicidade de interface.
+    * Escalabilidade gradual.
+    * Facilidade de Debug e Rastreabilidade.
+    * Baixo acoplamento (Independência).
+    * Gerenciamento de Carga e Atomicidade e Consistência.
+
+--- EN ---
+      
+# ADR-001: Initial Architecture Choice for Data Ingestion.
+
+  **Date:** 2026-06-22
+
+    ## Context.
+
+    The project needs to handle multiple data types in a flexible and dynamic way, utilizing ingestion methods appropriate for specific demands.
+    The first chosen approach is File-Based Ingestion / Batch File Processing, primarily aimed at handling structured data.
+
+  ## Reasoning
+  This methodology was adopted for the following reasons:
+  * Simplicity of Interface: Provides a straightforward and manageable entry point for data.
+  * Gradual Scalability: Allows for scaling up processing power as data volume grows.
+  * Ease of Debugging and Traceability: Simplifies the process of identifying errors and tracking data lineage.
+  * Loose Coupling: Promotes high independence between the source systems and the ingestion pipeline.
+  * Load Management, Atomicity, and Consistency: Ensures reliable data processing and integrity throughout the batch lifecycle.
+    
